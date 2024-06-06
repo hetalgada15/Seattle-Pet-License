@@ -1,0 +1,51 @@
+--
+-- ER/Studio Data Architect SQL Code Generation
+-- Project :      Logical_StageModel.DM1
+--
+-- Date Created : Sunday, February 12, 2023 18:18:17
+-- Target DBMS : PostgreSQL 8.0
+--
+
+-- 
+-- TABLE: "NYC_StagingTable" 
+--
+
+CREATE TABLE "NYC_StagingTable"(
+    "RecordID"               int4,
+    "CAMIS"                  int4,
+    "DBA"                    varchar(95),
+    "BORO"                   varchar(13),
+    "BUILDING"               varchar(10),
+    "STREET"                 varchar(40),
+    "ZIPCODE"                char(5),
+    "PHONE"                  char(12),
+    "CUISINE DESCRIPTION"    varchar(30),
+    "INSPECTION DATE"        char(10),
+    "ACTION"                 varchar(130),
+    "VIOLATION CODE"         char(5),
+    "VIOLATION DESCRIPTION"  varchar(940),
+    "CRITICAL FLAG"          char(14),
+    "SCORE"                  int2,
+    "GRADE"                  char(1),
+    "GRADE DATE"             varchar(10),
+    "RECORD DATE"            char(10),
+    "INSPECTION TYPE"        varchar(59),
+    "Latitude"               float4,
+    "Longitude"              float4,
+    "Community Board"        int2,
+    "Council District"       char(2),
+    "Census Tract"           char(6),
+    "BIN"                    int4,
+    "BBL"                    int8,
+    "NTA"                    char(4),
+    "Location Point"         boolean,
+    "DI_CreateDT"            timestamp,
+    "DI_WorkflowFileName"    varchar(4000),
+    "DateTime_Out"           date,
+    "DateTime_Out2"          date,
+    "DateTime_Out3"          date
+)
+;
+
+
+
